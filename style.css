@@ -222,9 +222,9 @@ body {
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-size: clamp(1.6rem, 3.2vw, 2.6rem);
     font-weight: 600;
-    line-height: 1.15;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--text-primary);
     margin-bottom: 20px;
@@ -912,12 +912,37 @@ body {
 }
 
 @media (max-width: 600px) {
-    .hero { padding: 120px 0 60px; }
-    .hero-title { font-size: 1.8rem; }
-    .skills-grid { grid-template-columns: 1fr; }
+    .hero { padding: 100px 0 56px; }
+    .hero-name { font-size: 0.75rem; }
+    .hero-title { font-size: 1.5rem; line-height: 1.25; }
+    .hero-sub { font-size: 0.95rem; margin-bottom: 28px; }
+    .hero-cta { gap: 10px; margin-bottom: 40px; }
+    .btn-primary, .btn-ghost { padding: 10px 20px; font-size: 14px; }
+    .hero-stats { flex-direction: column; align-items: flex-start; gap: 14px; }
+    .stat-num { font-size: 1.5rem; }
+
+    .section { padding: 64px 0; }
+    .section-header { margin-bottom: 36px; }
+
+    .about-inner { gap: 28px; }
+    .about-photo-frame { width: 200px; }
+    .about-name { font-size: 1.7rem; }
+    .about-bio { font-size: 14px; }
+
+    .case-card > *:not(.case-img) { margin-left: 16px; margin-right: 16px; }
+    .case-card > .case-meta { margin-top: 16px; }
+    .case-card > .case-actions { margin-bottom: 16px; }
+    .case-img { height: 150px; }
+    .case-title { font-size: 1rem; }
+
+    .skills-grid { grid-template-columns: 1fr; gap: 12px; }
+    .skill-block { padding: 22px 18px 18px; }
+
+    .contact-inner { gap: 32px; }
     .contact-links { grid-template-columns: 1fr; }
-    .hero-stats { flex-direction: column; gap: 16px; }
-    .case-img { height: 160px; }
+
+    .navbar-inner { padding: 0 16px; }
+    .container { padding: 0 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
