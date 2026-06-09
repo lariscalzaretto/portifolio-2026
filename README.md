@@ -4,7 +4,7 @@ Portfólio pessoal de Larissa Scalzaretto, Creative Designer com 7 anos de exper
 
 ## Acesse
 
-🔗 [lariscalzaretto.github.io/portifolio-2026](https://lariscalzaretto.github.io/portifolio-2026)
+🔗 [larissa-scalzaretto-designer.vercel.app](https://larissa-scalzaretto-designer.vercel.app/)
 
 ## Sobre o projeto
 
