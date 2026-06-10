@@ -798,6 +798,108 @@ body {
     -webkit-backdrop-filter: blur(4px);
 }
 
+/* ===== CAROUSEL ===== */
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.carousel-track-wrap {
+    overflow: hidden;
+    flex: 1;
+    border-radius: 14px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-slide {
+    flex: 0 0 calc(100% / 3);
+    padding: 0 8px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-slide img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px rgba(99, 102, 241, 0.2);
+}
+
+.carousel-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 26px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    line-height: 1;
+}
+
+.carousel-btn:hover:not(:disabled) {
+    background: var(--accent-subtle);
+    border-color: var(--border-accent);
+    box-shadow: 0 0 18px rgba(99, 102, 241, 0.25);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--accent-2);
+    width: 24px;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .carousel-slide { flex: 0 0 50%; }
+}
+
+@media (max-width: 600px) {
+    .carousel-slide { flex: 0 0 100%; }
+    .carousel-btn { width: 36px; height: 36px; font-size: 20px; }
+}
+
 /* ===== CONTACT ===== */
 .contact-inner {
     display: grid;
